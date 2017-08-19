@@ -152,6 +152,80 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-浮动规律" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/19/浮动规律/">浮动规律</a>
+    </h1>
+  
+
+        
+        <a href="/2017/08/19/浮动规律/" class="archive-article-date">
+  	<time datetime="2017-08-19T03:12:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>添加了浮动属性的元素，会脱离正常的文本流；导致后面一个没有浮动的元素，跑到他的下面去同时添加了浮动属性的两个或多个兄弟元素，会同时脱离文本流，在一行显示。（浮动改变了正常的文本流，从上下变成了左右）<br>但是如果当前那一行的整体宽度，小于两个浮动元素的宽度之和，那么它会折行<br>浮动元素的顺序是由浮动方向决定的，靠近父级框边缘的那个方向是前<br>浮动元素脱离文本流(文档流)之后，它的上边边会挨着上一个没有浮动元素的下边边。<br>如果当前浮动元素的前多个元素也是浮动，那么当前元素会紧挨着前一个元素的边边(左，右，下)。就算当前元素的宽度不超过前面元素的前面元素的宽度，也不会跟着前面元素的前面元素的边边！！！</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/08/19/浮动规律/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -314,6 +388,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
