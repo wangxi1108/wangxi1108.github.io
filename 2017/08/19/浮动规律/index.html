@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>浮动规律 | 飞豆~~</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="添加了浮动属性的元素，会脱离正常的文本流；导致后面一个没有浮动的元素，跑到他的下面去同时添加了浮动属性的两个或多个兄弟元素，会同时脱离文本流，在一行显示。（浮动改变了正常的文本流，从上下变成了左右）但是如果当前那一行的整体宽度，小于两个浮动元素的宽度之和，那么它会折行浮动元素的顺序是由浮动方向决定的，靠近父级框边缘的那个方向是前浮动元素脱离文本流(文档流)之后，它的上边边会挨着上一个没有浮动元素的">
+  <meta name="description" content="一、viewport viewport 是用户网页的可视区域。 viewport 翻译为中文可以叫做”视区”。手机浏览器是把页面放在一个虚拟的”窗口”（viewport）中，通常这个虚拟的”窗口”（viewport）比屏幕宽，这样就不用把每个网页挤到很小的窗口中（这样会破坏没有针对手机浏览器优化的网页的布局），用户可以通过平移和缩放来看网页的不同部分。 一个常用的针对移动网页优化过的页面的 vie">
 <meta name="keywords" content="css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浮动规律">
 <meta property="og:url" content="http://yoursite.com/2017/08/19/浮动规律/index.html">
 <meta property="og:site_name" content="飞豆~~">
-<meta property="og:description" content="添加了浮动属性的元素，会脱离正常的文本流；导致后面一个没有浮动的元素，跑到他的下面去同时添加了浮动属性的两个或多个兄弟元素，会同时脱离文本流，在一行显示。（浮动改变了正常的文本流，从上下变成了左右）但是如果当前那一行的整体宽度，小于两个浮动元素的宽度之和，那么它会折行浮动元素的顺序是由浮动方向决定的，靠近父级框边缘的那个方向是前浮动元素脱离文本流(文档流)之后，它的上边边会挨着上一个没有浮动元素的">
+<meta property="og:description" content="一、viewport viewport 是用户网页的可视区域。 viewport 翻译为中文可以叫做”视区”。手机浏览器是把页面放在一个虚拟的”窗口”（viewport）中，通常这个虚拟的”窗口”（viewport）比屏幕宽，这样就不用把每个网页挤到很小的窗口中（这样会破坏没有针对手机浏览器优化的网页的布局），用户可以通过平移和缩放来看网页的不同部分。 一个常用的针对移动网页优化过的页面的 vie">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-08-19T03:14:40.967Z">
+<meta property="og:updated_time" content="2017-08-23T12:01:24.215Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浮动规律">
-<meta name="twitter:description" content="添加了浮动属性的元素，会脱离正常的文本流；导致后面一个没有浮动的元素，跑到他的下面去同时添加了浮动属性的两个或多个兄弟元素，会同时脱离文本流，在一行显示。（浮动改变了正常的文本流，从上下变成了左右）但是如果当前那一行的整体宽度，小于两个浮动元素的宽度之和，那么它会折行浮动元素的顺序是由浮动方向决定的，靠近父级框边缘的那个方向是前浮动元素脱离文本流(文档流)之后，它的上边边会挨着上一个没有浮动元素的">
+<meta name="twitter:description" content="一、viewport viewport 是用户网页的可视区域。 viewport 翻译为中文可以叫做”视区”。手机浏览器是把页面放在一个虚拟的”窗口”（viewport）中，通常这个虚拟的”窗口”（viewport）比屏幕宽，这样就不用把每个网页挤到很小的窗口中（这样会破坏没有针对手机浏览器优化的网页的布局），用户可以通过平移和缩放来看网页的不同部分。 一个常用的针对移动网页优化过的页面的 vie">
   
     <link rel="alternative" href="/atom.xml" title="飞豆~~" type="application/atom+xml">
   
@@ -171,8 +171,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>添加了浮动属性的元素，会脱离正常的文本流；导致后面一个没有浮动的元素，跑到他的下面去同时添加了浮动属性的两个或多个兄弟元素，会同时脱离文本流，在一行显示。（浮动改变了正常的文本流，从上下变成了左右）<br>但是如果当前那一行的整体宽度，小于两个浮动元素的宽度之和，那么它会折行<br>浮动元素的顺序是由浮动方向决定的，靠近父级框边缘的那个方向是前<br>浮动元素脱离文本流(文档流)之后，它的上边边会挨着上一个没有浮动元素的下边边。<br>如果当前浮动元素的前多个元素也是浮动，那么当前元素会紧挨着前一个元素的边边(左，右，下)。就算当前元素的宽度不超过前面元素的前面元素的宽度，也不会跟着前面元素的前面元素的边边！！！</p>
+        <p>一、viewport</p>
+<pre><code>viewport 是用户网页的可视区域。
+</code></pre><p>viewport 翻译为中文可以叫做”视区”。<br>手机浏览器是把页面放在一个虚拟的”窗口”（viewport）中，通常这个虚拟的”窗口”（viewport）比屏幕宽，这样就不用把每个网页挤到很小的窗口中（这样会破坏没有针对手机浏览器优化的网页的布局），用户可以通过平移和缩放来看网页的不同部分。</p>
+<p>一个常用的针对移动网页优化过的页面的 viewport meta 标签大致如下：<br>自己改过：标配</p>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+<pre><code>* width：控制 viewport 的大小，可以指定的一个值，如果 600，或者特殊的值，如 device-width 为设备的宽度（单位为缩放为 100% 时的 CSS 的像素）。
+
+* height：和 width 相对应，指定高度。
+* initial-scale：初始缩放比例，也即是当页面第一次 load 的时候缩放比例。
+* maximum-scale：允许用户缩放到的最大比例。
+* minimum-scale：允许用户缩放到的最小比例。
+* user-scalable：用户是否可以手动缩放。
+</code></pre>
       
 
       
